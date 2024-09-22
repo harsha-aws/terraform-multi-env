@@ -1,5 +1,5 @@
-variable "instances" {
-  type = map
+variable  "instances" {
+  type        = map
 }
 
 variable "domain_name" {
@@ -10,19 +10,16 @@ variable "zone_id" {
   default = "Z07721302HYF0SM8N34I3"
 }
 
-
 variable "common_tags" {
-  default = {
-    Project   = "expense"
-    Terraform = "true"
-  }
+    default = {
+        Project = "expense"
+        Terraform = "true"
+    }
 }
 
 variable "tags" {
-  type = map
+    type = map
 }
 
 variable "environment" {
 }
-
-
